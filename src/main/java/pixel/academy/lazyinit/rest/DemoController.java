@@ -10,26 +10,17 @@ import pixel.academy.lazyinit.common.Chef;
 @RestController
 public class DemoController {
 
-
-
     private Chef myChef;
     @Autowired
     public DemoController(
-            @Qualifier("mexicanChef") Chef theChef) {
+            @Qualifier("greekChef") Chef theChef) {
             System.out.println("In constructor: " + getClass().getSimpleName());
         myChef = theChef;
-
-
     }
 
     @GetMapping("/dailyrecipe")
     public String getDailyRecipe() {
         return myChef.getDailyRecipe();
     }
-
-//    @GetMapping("/check")
-//    public String check() {
-//        return "Comparing beans: myChef == secondChef, " + (myChef == secondChef);
-//    }
 
 }
