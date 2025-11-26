@@ -1,8 +1,5 @@
 package pixel.academy.lazyinit.common;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class ItalianChef implements Chef {
 
     public ItalianChef() {

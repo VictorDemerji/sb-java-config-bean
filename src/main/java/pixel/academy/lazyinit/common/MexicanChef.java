@@ -5,7 +5,6 @@ import jakarta.annotation.PreDestroy;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-@Component
 public class MexicanChef implements Chef {
 
     public MexicanChef() {

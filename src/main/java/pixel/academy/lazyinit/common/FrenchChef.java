@@ -6,7 +6,6 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-@Component
 public class FrenchChef implements Chef {
 
     public FrenchChef() {
